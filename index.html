@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="identification-header">
+      <div id="logo-image">
+        <img src="src/assets/logo.svg" alt="Logo To Do" />
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form action="." method="get">
+          <label for="insert-task">
+            <input type="text" id="insert-task" placeholder="Adicione uma nova tarefa" />
+          </label>
+          <button type="button">
+            Criar
+            <img src="src/assets/button-add.svg" alt="botão de adicionar task" />
+          </button>
+        </form>
+        <div class="created-tasks">
+          <header class="created-tasks-header">
+            <p id="created">Tarefas criadas <span>0</span></p>
+            <p id="completed">Concluídas <span>0</span></p>
+          </header>
+        </div>
+        <div class="tasks"></div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
